@@ -1,6 +1,6 @@
 {
   "name": "imweb-tpl-engine",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a template engine for imweb",
   "main": "index.js",
   "scripts": {
