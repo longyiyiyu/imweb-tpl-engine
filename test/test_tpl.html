@@ -1,0 +1,17 @@
+<ul class="side-nav" id="js-side-nav">
+    <% for(var i = 1, len = data.length; i <= len; ++i) { %>
+        <li class="side-nav-item <% if(i==1) { %> item-current <% } %>cate-item"><a href="#cate-id-<%=i%>" report-tdw="action=navi_classify&ver1=<%=data[i]%>"><%=data[i]%></a></li>
+    <% } %>
+    <li></li>
+    <li class="side-nav-item item-current cate-item"><a href="#cate-id-1" report-tdw="action=navi_classify&ver1=重点解析">重点解析</a></li>
+    <li class="side-nav-item cate-item"><a href="#cate-id-2" report-tdw="action=navi_classify&ver1=高分冲刺">高分冲刺</a></li>
+    <li class="side-nav-item cate-item"><a href="#cate-id-3" report-tdw="action=navi_classify&ver1=考前辅导">考前辅导</a></li>
+    <li class="side-nav-item cate-item"><a href="#cate-id-4" report-tdw="action=navi_classify&ver1=实战模拟">实战模拟</a></li>
+    <li class="side-nav-item ">
+        <div class="qr-wrap">
+            <div class="qr"></div>
+        </div>
+    </li>
+    <li class="side-nav-item"><a href="javascript:void(0)" class="share" report-tdw="action=navi_share"><i class="icon-share  pngFix"></i><span>分享</span></a></li>
+    <li class="side-nav-item"><a href="javascript:void(0)" class="back-to-top" report-tdw="action=navi_up"><i class="icon-back-to-top  pngFix"></i><span>返回顶部</span></a></li>
+</ul>

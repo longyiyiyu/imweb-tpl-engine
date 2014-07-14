@@ -1,0 +1,26 @@
+{
+  "name": "imweb-tpl-engine",
+  "version": "0.0.1",
+  "description": "a template engine for imweb",
+  "main": "index.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/longyiyiyu/imweb-tpl-engine.git"
+  },
+  "keywords": [
+    "template",
+    "engine",
+    "imweb"
+  ],
+  "author": "lqlongli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/longyiyiyu/imweb-tpl-engine/issues"
+  },
+  "homepage": "https://github.com/longyiyiyu/imweb-tpl-engine",
+	"dependencies": {
+	}
+}
