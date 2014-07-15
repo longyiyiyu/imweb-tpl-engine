@@ -24,7 +24,7 @@ function compileTmpl(tmpl) {
 		"      with (it) {",
 		"        var _$out_= [];",
 			"        _$out_.push('" + tmpl
-			.replace(/\r\n|\n|\r/g, "\v")
+			.replace(/\r\n|\n|\r/g, "\v\x01")
 			.replace(/(?:^|%>).*?(?:<%|$)/g, function($0) {
 				return $0.replace(/('|\\)/g, "\\$1").replace(/[\v\t]/g, "").replace(/\s+/g, " ")
 			})
@@ -55,7 +55,7 @@ function getTpl(tid, it, opt) {
 			fcache[tid] = compileTmpl(tcache[tid]);
 			delete tcache[tid];
 		}
-		return fcache[tid](it, opt);
+		return fcache[tid](it, opt).replace(/\x01/g, EOL);
 	} catch (e) {
 		return e.message;
 	}
